@@ -1,10 +1,8 @@
-# Reactjs UIKIT
+# Reactjs Hooks
 
-Enouvo React UIKIT with:
+Enouvo React Hooks with:
 
 - Typescript
-- React
-- Antd
 
 ## Description
 
