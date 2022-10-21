@@ -10,4 +10,4 @@ Package contains the base eslint configuration using for ReactJS project
 
 ## How to install
 
-`yarn add @enouvo/react-uikit`
+`yarn add @enouvo/react-hooks`
