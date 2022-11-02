@@ -1,5 +1,9 @@
-import { TablePaginationConfig } from "antd";
 import { useMemo, useState } from "react";
+
+interface TablePaginationConfig {
+  current: number;
+  pageSize: number;
+}
 
 export function useTable<T>(data: T[] = [], defaultPageSize = 10) {
   const [pageSize, setPageSize] = useState(defaultPageSize);
