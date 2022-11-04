@@ -5,3 +5,4 @@ export * from "./useHover";
 export * from "./useKeyPress";
 export * from "./usePrevious";
 export * from "./useClock";
+export * from "./useDidUpdate";
