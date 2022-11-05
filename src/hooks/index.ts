@@ -6,3 +6,4 @@ export * from "./useKeyPress";
 export * from "./usePrevious";
 export * from "./useClock";
 export * from "./useDidUpdate";
+export * from "./useItem";
