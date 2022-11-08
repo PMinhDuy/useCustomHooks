@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { SetStateAction, useCallback, useState } from "react";
 
 export function useStickyState<T>(defaultValue: T, key: string) {
   const [value, setValue] = useState(() => {
@@ -6,9 +6,11 @@ export function useStickyState<T>(defaultValue: T, key: string) {
     return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue;
   });
 
-  const changeState = (value: T) => {
-    setValue(value);
-    window.localStorage.setItem(key, JSON.stringify(value));
-  };
+  const changeState = useCallback((state: SetStateAction<T>) => {
+    const newValue = state instanceof Function ? state(value) : state
+    setValue(newValue)
+    window.localStorage.setItem(key, JSON.stringify(newValue));
+  }, [value]);
+
   return [value, changeState];
 }
