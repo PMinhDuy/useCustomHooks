@@ -1,7 +1,7 @@
 {
   "name": "@enouvo/react-hooks",
   "author": "Son Tran",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "main": "dist/index.js",
   "module": "dist/react-hooks.esm.js",
   "type": "module",
