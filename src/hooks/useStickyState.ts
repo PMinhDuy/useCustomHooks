@@ -6,7 +6,7 @@ export function useStickyState<T>(defaultValue: T, key: string) {
     return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue;
   });
 
-  const changeState = () => {
+  const changeState = (value: T) => {
     setValue(value);
     window.localStorage.setItem(key, JSON.stringify(value));
   };
