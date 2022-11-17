@@ -2,28 +2,29 @@
   "name": "@enouvo/react-hooks",
   "author": "Son Tran",
   "version": "0.0.11",
-  "main": "dist/index.js",
-  "module": "dist/react-hooks.esm.js",
-  "type": "module",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "sideEffects": false,
+  "module": "esm/index.js",
   "files": [
-    "dist"
+    "lib/",
+    "esm/"
   ],
+  "types": "lib/index.d.ts",
+  "typings": "lib/index.d.ts",
   "engines": {
     "node": ">=14"
   },
   "license": "MIT",
   "scripts": {
     "prepare": "tsc",
-    "build": "tsdx build --format esm",
+    "build:cjs": "tsc",
+    "build:es": "tsc -m esNext --outDir esm",
+    "build": "yarn build:cjs && yarn build:es",
     "check-types": "tsc --noEmit",
     "lint": "eslint \"src/**/*.{tsx,ts}\" --fix",
     "lint-staged": "lint-staged",
     "lint-pass": "echo '\\033[4;32m♡ ' Format complete ♡' \\033[0m'"
   },
-  "sideEffects": [
-    "*.less"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/Enouvo/react-hooks"
@@ -38,7 +39,6 @@
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
-    "tsdx": "^0.14.1",
     "typescript": "^4.8.4"
   },
   "peerDependencies": {
