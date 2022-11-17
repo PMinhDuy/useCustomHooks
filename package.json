@@ -1,7 +1,7 @@
 {
   "name": "@enouvo/react-hooks",
   "author": "Son Tran",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "sideEffects": false,
   "module": "esm/index.js",
