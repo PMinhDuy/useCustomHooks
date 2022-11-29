@@ -1,7 +1,7 @@
 {
   "name": "@enouvo/react-hooks",
   "author": "Son Tran",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "lib/index.js",
   "sideEffects": false,
   "module": "esm/index.js",
@@ -30,14 +30,14 @@
     "url": "https://github.com/Enouvo/react-hooks"
   },
   "devDependencies": {
-    "@enouvo/eslint-config-react": "^1.4.0",
+    "@enouvo/eslint-config-react": "^1.5.0",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.25",
-    "@typescript-eslint/parser": "^5.43.0",
+    "@typescript-eslint/parser": "^5.45.0",
     "eslint": "^8.28.0",
     "husky": "^8.0.2",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
+    "lint-staged": "^13.0.4",
+    "prettier": "^2.8.0",
     "react": "^18.2.0",
     "typescript": "^4.9.3"
   },
