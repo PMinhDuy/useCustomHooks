@@ -8,3 +8,5 @@ export * from "./useClock";
 export * from "./useDidUpdate";
 export * from "./useItem";
 export * from "./useStickyState";
+export * from "./useForceUpdate";
+export * from "./useSessionStorage";
