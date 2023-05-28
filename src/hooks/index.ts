@@ -10,3 +10,6 @@ export * from "./useItem";
 export * from "./useStickyState";
 export * from "./useForceUpdate";
 export * from "./useSessionStorage";
+export * from "./useLockBody";
+export * from "./useIsMounted";
+export * from "./useEvent";

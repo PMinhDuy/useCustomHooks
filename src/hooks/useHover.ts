@@ -1,4 +1,5 @@
-import { RefObject, useEffect, useRef, useState } from "react";
+import type { RefObject } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function useHover<T extends HTMLElement>(): [RefObject<T>, boolean] {
   const [value, setValue] = useState<boolean>(false);

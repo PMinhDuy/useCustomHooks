@@ -1,4 +1,5 @@
-import { SetStateAction, useCallback, useState } from "react";
+import type { SetStateAction } from "react";
+import { useCallback, useState } from "react";
 
 export function useStickyState<T>(defaultValue: T, key: string) {
   const [value, setValue] = useState(() => {
